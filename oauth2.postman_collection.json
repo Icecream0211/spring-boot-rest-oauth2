@@ -1,0 +1,105 @@
+{
+	"id": "850984ec-ce97-0dee-aa7b-17c35250002c",
+	"name": "oauth2",
+	"description": "",
+	"order": [
+		"c321e99e-500a-f9ef-0872-031eb85e3c66",
+		"cce7ad2e-9a9b-8fa3-a2e1-ae651102184b",
+		"f0febee5-ea16-22d2-a78e-70e8627347de"
+	],
+	"folders": [],
+	"timestamp": 1482895994818,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "c321e99e-500a-f9ef-0872-031eb85e3c66",
+			"url": "http://localhost:8080/oauth/token",
+			"method": "POST",
+			"headers": "Authorization: Basic Y2xpZW50YXBwOjEyMzQ1Ng==\nAccept: application/json\nContent-Type: application/x-www-form-urlencoded\n",
+			"data": [
+				{
+					"key": "password",
+					"value": "spring",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "roy",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "read write",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_secret",
+					"value": "123456",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "clientapp",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": "{\"username\":\"clientapp\",\"password\":\"123456\",\"showPassword\":false,\"saveToRequest\":false}",
+			"pathVariables": {},
+			"version": 2,
+			"name": "http://localhost:8080/oauth/token",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "850984ec-ce97-0dee-aa7b-17c35250002c"
+		},
+		{
+			"id": "cce7ad2e-9a9b-8fa3-a2e1-ae651102184b",
+			"url": "http://localhost:8080/greeting",
+			"method": "GET",
+			"headers": "Authorization: Bearer 9c71b806-5e04-4d12-98a7-aa02bea024df\n",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"version": 2,
+			"name": "http://localhost:8080/greeting",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "850984ec-ce97-0dee-aa7b-17c35250002c"
+		},
+		{
+			"id": "f0febee5-ea16-22d2-a78e-70e8627347de",
+			"url": "http://localhost:8080/home",
+			"method": "GET",
+			"headers": "Authorization: Bearer 68359122-d3d8-48f4-9db9-b21144facd7d\n",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"preRequestScript": null,
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"version": 2,
+			"name": "http://localhost:8080/home",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "850984ec-ce97-0dee-aa7b-17c35250002c"
+		}
+	]
+}
