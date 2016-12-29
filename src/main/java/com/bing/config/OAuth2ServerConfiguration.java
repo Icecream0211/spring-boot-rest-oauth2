@@ -90,7 +90,9 @@ public class OAuth2ServerConfiguration {
 					.userDetailsService(userDetailsService);
 			// @formatter:on
 		}
-
+		/**
+		 * client_credentials授权模式跟用户无绑定，所以不会传送用户信息
+		 */
 		@Override
 		public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 			// @formatter:off

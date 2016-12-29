@@ -31,7 +31,12 @@ public class GreetingController {
 	private static final String template = "Hello, %s!";
 
 	private final AtomicLong counter = new AtomicLong();
-
+	/**
+	 * 如果使用client_credentials授权模式，则抛异常，
+	 * 因为该模式和用户信息没有关系
+	 * @param user
+	 * @return
+	 */
 	@RequestMapping("/greeting")
 	public Greeting greeting(@AuthenticationPrincipal User user) {
 		return new Greeting(counter.incrementAndGet(),
