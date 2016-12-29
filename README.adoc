@@ -1,11 +1,6 @@
 借鉴于：https://github.com/royclarkson/spring-rest-service-oauth.git
 
-增加了：
-1、将oauth数据存放于数据库，而不是inMemory
-2、初始化脚本以以及postman测试集合
-3、去掉了gradle
-4、增加了alibaba的druid数据源配置
-5、更改了目录结构
+
 
 = Spring REST Service OAuth
 
@@ -13,7 +8,14 @@ image::https://travis-ci.org/royclarkson/spring-rest-service-oauth.svg[Build Sta
 
 This is a simple REST service that provides a single RESTful endpoint protected by OAuth 2. The REST service is based on the https://spring.io/guides/gs/rest-service/[Building a RESTful Web Service] getting started guide. This project incorporates the new Java-based configuration support, now available in Spring Security OAuth 2.0. Please log any issues or feature requests to the https://github.com/spring-projects/spring-security-oauth/issues[Spring Security OAuth project].
 
+===增加了
 
+* 将oauth数据存放于数据库，而不是inMemory
+* 初始化脚本以以及postman测试集合
+* 去掉了gradle
+* 增加了alibaba的druid数据源配置
+* 更改了目录结构
+暂时不讨论  authention_code，implict模式
 == Spring Projects
 
 The following Spring projects are used in this sample app:
